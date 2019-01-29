@@ -6,7 +6,7 @@ before_script:
 script:
   - ./flutter/bin/flutter test
   - gem install fastlane
-  - flutter build ios --release --no-codesign
-  - cd boom/ios && fastlane init
+  - ./flutter/bin/flutter build ios --release --no-codesign
+  - cd ios && fastlane init
 
 
